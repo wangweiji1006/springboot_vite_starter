@@ -81,6 +81,7 @@ npm run dev
 
 ```
 mvn clean package
+npm run build
 java -jar -Dspring.profiles.active=prod target/springboot-vite-0.0.1-SNAPSHOT.jar
 ```
 		

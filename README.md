@@ -83,5 +83,6 @@ In this way, you can experience the use of thymeleaf+vite to develop the front e
 
 ```
 mvn clean package
+npm run build
 java -jar -Dspring.profiles.active=prod target/springboot-vite-0.0.1-SNAPSHOT.jar
 ```
