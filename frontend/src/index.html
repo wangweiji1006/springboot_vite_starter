@@ -1,0 +1,19 @@
+<!doctype html>
+<html
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{layout.html}"
+>
+  <head>
+    <title th:text="#{index.title}"></title>
+    <meta name="keywords" th:content="#{index.keywords}" />
+    <meta name="description" th:content="#{index.description}" />
+  </head>
+  <body>
+    <div layout:fragment="content" class="m-8 rounded bg-white p-8 shadow-md">
+      <block th:replace="~{svg :: right}"></block>
+      <h1 class="mb-4 text-2xl font-semibold" th:text="#{person1.name}"></h1>
+      <h1 class="mb-4 text-2xl font-semibold" th:text="#{person1.age}"></h1>
+    </div>
+    <script type="module" src="/assets/js/index.js"></script>
+  </body>
+</html>
